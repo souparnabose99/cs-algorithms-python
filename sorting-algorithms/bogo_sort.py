@@ -25,7 +25,7 @@ class BogoSort:
     # Fisher-Yates shuffle - > Algorithm for generating random permutations of a finite sequence -> O(N)
     def shuffle(self):
         # for i from n−1 down to 1
-        for i in range(len(self.nums)-2, 0, -1):
+        for i in range(len(self.nums)-2, -1, -1):
             j = random.randint(0, i+1)
             self.nums[i], self.nums[j] = self.nums[j], self.nums[i]
 
@@ -39,12 +39,11 @@ if __name__ == "__main__":
     end = time.time()
     print("Run time : ", end - start)
 
-# No of shuffles :  1178
+# No of shuffles :  424
 # [-17, -1, 2, 3, 19, 83]
-# Run time :  0.06699085235595703
+# Run time :  0.04997134208679199
 
-# No of shuffles :  1493
+# No of shuffles :  3181
 # [-17, -1, 2, 3, 19, 83]
-# Run time :  0.15182209014892578
-
+# Run time :  0.21231889724731445
 
