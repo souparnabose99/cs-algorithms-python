@@ -21,3 +21,4 @@ print(n)
 selection_sort(n)
 print(n)
 # Fast only when size of Array is less than 10
+
