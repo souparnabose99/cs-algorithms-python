@@ -13,3 +13,4 @@ print(n)
 insertion_sort(n)
 print(n)
 # Works faster than quick/merge sort when no of items less than 20
+
