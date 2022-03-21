@@ -1,3 +1,25 @@
+
+def tail(n):
+    print("Calling tail with n = ", str(n))
+    if n == 0:
+        return
+    print(n)
+    tail(n-1)
+    pass
+
+
+# Head recursion makes twice as many operations as Tail recursion
+def head(n):
+    print("Calling head with n = ", str(n))
+    if n == 0:
+        return
+    head(n-1)
+    print(n)
+
+
+tail(5)
+head(5)
+
 # Calling tail with n =  5
 # 5
 # Calling tail with n =  4
