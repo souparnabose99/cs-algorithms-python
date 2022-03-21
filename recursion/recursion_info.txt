@@ -1,0 +1,13 @@
+Tail recursion is very similar to iteration - and usually it is transformed into an iteration
+
+Head recursion is a bit more complex because the function calls must be tracked - this is why these function calls are pushed onto the stack (call-stack)
+
+There is a fundamental difference between head recursion and tail recursion :-
+
+-> Tail recursion related function calls (and the stack frames) do not depend on each other - 
+   there is no so-called "downward dependence" in the stack memory regarding the stack frames
+
+-> Head recursion related function calls DO depend on each other - 
+   they use values returned from other function calls
+
+This is exactly why we can optimise tail recursion because the function calls and stack frames are totally independent of each other.
