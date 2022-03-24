@@ -11,3 +11,10 @@ There is a fundamental difference between head recursion and tail recursion :-
    they use values returned from other function calls
 
 This is exactly why we can optimise tail recursion because the function calls and stack frames are totally independent of each other.
+
+
+Every recursive function call gets it's own stack frame.
+Every stack frame has its own local variables isolated from each other.
+
+!!!!! Recursive calls cannot change the value of variables !!!!!
+But in iteration, we can.
